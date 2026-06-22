@@ -5,7 +5,7 @@ import profile from "../data/profile";
 
 function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center px-4 md:px-6 overflow-hidden">
       {/* Background Glows */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-32 left-0 w-[500px] h-[500px] bg-primary/20 blur-[150px] rounded-full" />
@@ -27,8 +27,9 @@ function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
           className="
-            text-6xl
-            md:text-8xl
+            text-4xl
+            sm:text-5xl
+            md:text-7xl
             lg:text-9xl
             font-black
             tracking-tight
@@ -60,7 +61,7 @@ function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6 }}
-          className="max-w-4xl mx-auto mt-8 text-lg md:text-xl text-slate-300"
+          className="max-w-4xl mx-auto mt-6 md:mt-8 text-base md:text-lg lg:text-xl text-slate-300 px-2"
         >
           {profile.summary}
         </motion.p>
@@ -73,24 +74,24 @@ function Hero() {
         >
           <a
             href="#research"
-            className="px-7 py-4 rounded-xl bg-primary hover:scale-105 transition flex items-center gap-2"
+            className="px-5 md:px-7 py-3 md:py-4 text-sm md:text-base rounded-xl bg-primary hover:scale-105 transition flex items-center gap-2"
           >
             View Research
-            <ArrowRight size={18} />
+            <ArrowRight size={16} />
           </a>
 
           <a
             href="#projects"
-            className="px-7 py-4 rounded-xl border border-white/10 bg-white/5 backdrop-blur-xl"
+            className="px-5 md:px-7 py-3 md:py-4 text-sm md:text-base rounded-xl border border-white/10 bg-white/5 backdrop-blur-xl"
           >
             View Projects
           </a>
 
           <a
             href="/docs/resume.pdf"
-            className="px-7 py-4 rounded-xl border border-white/10 bg-white/5 backdrop-blur-xl flex items-center gap-2"
+            className="px-5 md:px-7 py-3 md:py-4 text-sm md:text-base rounded-xl border border-white/10 bg-white/5 backdrop-blur-xl flex items-center gap-2"
           >
-            <Download size={18} />
+            <Download size={16} />
             Resume
           </a>
         </motion.div>

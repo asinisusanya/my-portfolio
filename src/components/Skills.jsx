@@ -12,18 +12,18 @@ function Skills() {
   ];
 
   return (
-    <section id="skills" className="py-32 px-6">
+    <section id="skills" className="py-32 px-4 md:px-6">
       <div className="max-w-7xl mx-auto">
         <SectionTitle
           title="Skills"
           subtitle="Technical expertise across AI, ML, optimization and software engineering."
         />
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {groups.map(([title, list]) => (
             <div
               key={title}
-              className="rounded-3xl bg-white/5 border border-white/10 p-8"
+              className="rounded-2xl md:rounded-3xl bg-white/5 border border-white/10 p-6 md:p-8"
             >
               <h3 className="text-xl font-bold mb-6">{title}</h3>
 

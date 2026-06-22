@@ -9,10 +9,10 @@ function ResearchCard({ research }) {
       <img
         src={research.image}
         alt={research.title}
-        className="h-56 w-full object-cover"
+        className="h-40 md:h-56 w-full object-cover"
       />
 
-      <div className="p-7">
+      <div className="p-5 md:p-7">
 
         <div className="flex justify-between items-center mb-4">
 
@@ -22,7 +22,7 @@ function ResearchCard({ research }) {
 
         </div>
 
-        <h3 className="text-xl font-bold mb-3">
+        <h3 className="text-lg md:text-xl font-bold mb-3">
           {research.title}
         </h3>
 

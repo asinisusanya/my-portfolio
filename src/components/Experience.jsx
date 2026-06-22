@@ -5,7 +5,7 @@ import ExperienceCard from "./ExperienceCard";
 
 function Experience() {
   return (
-    <section id="experience" className="py-32 px-6">
+    <section id="experience" className="py-32 px-4 md:px-6">
       <div className="max-w-5xl mx-auto">
         <SectionTitle
           title="Experience"

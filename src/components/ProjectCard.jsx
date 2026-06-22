@@ -10,12 +10,12 @@ function ProjectCard({ project }) {
       <img
         src={project.image}
         alt={project.title}
-        className="w-full h-56 object-cover"
+        className="w-full h-40 md:h-56 object-cover"
       />
 
-      <div className="p-7">
+      <div className="p-5 md:p-7">
 
-        <h3 className="text-xl font-bold">
+        <h3 className="text-lg md:text-xl font-bold">
           {project.title}
         </h3>
 

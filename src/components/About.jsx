@@ -18,7 +18,7 @@ function About() {
   ];
 
   return (
-    <section id="about" className="py-32 px-6">
+    <section id="about" className="py-32 px-4 md:px-6">
 
       <div className="max-w-7xl mx-auto">
 
@@ -31,9 +31,9 @@ function About() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-10"
+          className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl md:rounded-3xl p-6 md:p-10"
         >
-          <p className="text-lg text-slate-300 leading-relaxed">
+          <p className="text-base md:text-lg text-slate-300 leading-relaxed">
             Statistics and Operations Research undergraduate with strong
             foundations in Artificial Intelligence, Machine Learning,
             Data Science, Optimization and Software Engineering.
