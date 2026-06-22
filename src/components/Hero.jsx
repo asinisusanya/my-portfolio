@@ -14,13 +14,13 @@ function Hero() {
       </div>
 
       <div className="max-w-7xl mx-auto text-center">
-        <motion.p
+        {/* <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="uppercase tracking-[0.3em] text-primary mb-6"
+          className="uppercase tracking-[0.3em] text-primary mb-6 mt-20"
         >
           AI Research Portfolio
-        </motion.p>
+        </motion.p> */}
 
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
@@ -34,6 +34,8 @@ function Hero() {
             font-black
             tracking-tight
             leading-none
+            md:mt-32
+            mt-24
           "
         >
           ASINI SUSANYA
